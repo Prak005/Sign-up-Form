@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    height: 100vh;
+}
+
+@font-face{
+    font-family: odin-norse-bold;
+    src: url(./images/Norse-Bold.otf);
+}
+
+.image-logo {
+    position: relative;
+    flex: 1 1 35%;
+    color: white;
+}
+
+#bg-png {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo {
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+#logo-png {
+    height: 16vh;
+}
+
+#logo-text {
+    font-size: 6rem;
+    font-family: odin-norse-bold;
+}
+
+#footer {
+    position: absolute;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#footer a {
+    color: white;
+}
+
+.form-element {
+    flex: 1 1 65%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+    height: 90vh;
+}
+
+#header-1, #header-2, #header-3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-left: 2.7rem;
+}
+#header-1{
+    padding-top: 15vh;
+    padding-right: 25vw;
+}
+#header-3{
+    padding-top: 5vh;
+}
+
+#sign-up-form {
+    background-color: white;
+    padding: 2rem 3rem;
+    margin-top: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#form-caption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#sign-up-form + p:not(#form-caption, #existing-account) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem
+}
+
+.inputs-container {
+    display: flex;        
+    flex-wrap: wrap;      
+    gap: 20px 0;
+    padding-right: 20vw;       
+}
+
+.inputs-container > p {
+    display: flex;
+    flex-direction: column; 
+    flex: 1 1 20%;          
+    margin-bottom: 0;       
+}
+
+label {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    color: gray;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.03rem;
+}
+
+input {
+    padding: 0.5rem 0.8rem;
+    border: 1.5px solid darkgray;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 12vw;
+    height: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 5px black;
+}
+
+input:invalid {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+input:valid[required]{
+    border-color: green;
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#create-account {
+    background-color: #596D48;
+    color: white;
+    align-items: center;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+#create-account:hover {
+    background-color: #6a8255;
+}
+
+#existing-account {
+    margin-top: 2rem;
+}
+
+#existing-account a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#right-footer {
+    padding-left: 2.7rem;
+}
