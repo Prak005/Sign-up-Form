@@ -34,6 +34,7 @@
             You <span style="font-style: italic;">know</span> you want to.
         </div>
         <form id="sign-up-form">
+            <div id="fields">
             <p id="form-caption">Let's do this!</p>
             <p id="note">Fields marked with asterisk * are required</p>
             <div class="inputs-container">
@@ -51,7 +52,7 @@
                 </p>
                 <p id="form-tel">
                     <label for="phone">PHONE NUMBER</label>
-                    <input id="phone" type="tel" name="number" />
+                    <input id="phone" type="tel" pattern="[0-9+\-\s]*" name="number" />
                 </p>
                 <p id="form-password">
                     <label for="pwd">PASSWORD*</label>
@@ -62,13 +63,14 @@
                     <input id="cnf-pwd" type="password" required />
                 </p>
             </div>
+            </div>
+            <div id="right-footer">
+                <button id="create-account" type="submit">Create Account</button>
+                <p id="existing-account">
+                    Already have an account?<a href="">Log in</a>
+                </p>
+            </div>
         </form>
-        <div id="right-footer">
-            <button id="create-account" type="submit">Create Account</button>
-            <p id="existing-account">
-                Already have an account?<a href="">Log in</a>
-            </p>
-        </div>
     </div>
 </body>
 
