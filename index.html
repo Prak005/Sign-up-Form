@@ -10,13 +10,16 @@
 
 <body>
     <div class="image-logo">
-        <!-- <img id="bg-png" src="./images/halie-west-unsplash.jpg"> -->
+        <div id="bg-img">
+            <img id="bg-png" src="./images/halie-west-unsplash.jpg">
+        </div>
         <div id="logo">
             <img id="logo-png" src="./images/odin-lined.png">
             <p id="logo-text">ODIN</p>
         </div>
         <div id="footer">
-            Photo by <a id="profile" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a id="website" href="https://unsplash.com">Unsplash</a>
+            Photo by <a id="profile" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a id="website"
+                href="https://unsplash.com">Unsplash</a>
         </div>
     </div>
     <div class="form-element">
@@ -33,34 +36,39 @@
         <form id="sign-up-form">
             <p id="form-caption">Let's do this!</p>
             <p id="note">Fields marked with asterisk * are required</p>
-            <p id="form-first-name">
-                <label for="first-name">FIRST NAME* :</label>
-                <input id="first-name" type="text" name="name" required />
-            </p>
-            <p id="form-last-name">
-                <label for="last-name">LAST NAME</label>
-                <input id="last-name" type="text" name="name" />
-            </p>
-            <p id="form-email">
-                <label for="email">EMAIL* :</label>
-                <input id="email" type="email" name="mail" required />
-            </p>
-            <p id="form-tel">
-                <label for="phone">PHONE NUMBER :</label>
-                <input id="phone" type="tel" name="number"/>
-            </p>
-            <p id="form-password">
-                <label for="pwd">PASSWORD* :</label>
-                <input id="pwd" type="password" required/>
-            </p>
-            <p id="form-cnf-password">
-                <label for="cnf-pwd">CONFIRM PASSWORD* :</label>
-                <input id="cnf-pwd" type="password" required/>
-            </p>
+            <div class="inputs-container">
+                <p id="form-first-name">
+                    <label for="first-name">FIRST NAME*</label>
+                    <input id="first-name" type="text" name="name" required />
+                </p>
+                <p id="form-last-name">
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" type="text" name="name" />
+                </p>
+                <p id="form-email">
+                    <label for="email">EMAIL*</label>
+                    <input id="email" type="email" name="mail" required />
+                </p>
+                <p id="form-tel">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input id="phone" type="tel" name="number" />
+                </p>
+                <p id="form-password">
+                    <label for="pwd">PASSWORD*</label>
+                    <input id="pwd" type="password" required />
+                </p>
+                <p id="form-cnf-password">
+                    <label for="cnf-pwd">CONFIRM PASSWORD*</label>
+                    <input id="cnf-pwd" type="password" required />
+                </p>
+            </div>
+        </form>
+        <div id="right-footer">
             <button id="create-account" type="submit">Create Account</button>
             <p id="existing-account">
                 Already have an account?<a href="">Log in</a>
             </p>
+        </div>
     </div>
 </body>
 
