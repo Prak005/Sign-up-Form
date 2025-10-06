@@ -79,7 +79,7 @@ body {
     padding-top: 5vh;
 }
 
-#sign-up-form {
+#fields {
     background-color: white;
     padding: 2rem 3rem;
     margin-top: 3rem;
@@ -90,12 +90,6 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 0;
-}
-
-#sign-up-form + p:not(#form-caption, #existing-account) {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.2rem
 }
 
 .inputs-container {
@@ -173,6 +167,6 @@ input:valid[required]{
     text-decoration: none;
 }
 
-#right-footer {
-    padding-left: 2.7rem;
+#right-footer{
+    padding: 0 3rem;
 }
